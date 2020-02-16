@@ -6,7 +6,7 @@ Generate random compliments for friends using for-each loops with this handy Pyt
 The code for lesson is in `forloop_lesson.py`. To view the outputs for the code below, run the program from the 
 command line with `python forloop_lesson.py`.
 
-To get started we'll need list of your followers and a list of compliments to send them.
+To get started we'll need a list of your followers and a list of compliments to send them.
 
 ```
 followers = ['Jo Jo', 'Randy', 'Lee', 'Becky', 'Jamal']
@@ -18,8 +18,8 @@ compliments = [
 ]
 ```
 
-Let's start by using a for-each loop to send a different compliment to your best friend Randy every day. A for-each loop 
-in Python allows us to repeat the same block of code for each item in a list.
+Let's start by using a for-each loop to generate a different compliment to send your best friend Randy every day. A 
+for-each loop in Python allows us to repeat the same block of code for each item in a list.
 
 ```
 print("Send Randy compliments\n")
@@ -28,7 +28,7 @@ for compliment in compliments:
     print("Hey " + followers[1] + "! It's been too long. Just wanted to tell you that " + compliment)
 ```
 
-Cool, now let's send a random compliment to every single one of your friends.
+Cool, now let's generate random compliments for every single one of your friends.
 
 ```
 print("\nSend random compliments to all your friends\n")
@@ -37,8 +37,8 @@ for friend in followers:
     print("Hey " + friend + "! How's it going? Just reaching out to say that " + random.choice(compliments))
 ```
 
-Today you're feeling extra nice so you're going to use a nested for loop to send every compliment you can think of
-to every one of your friends. Go ahead and add some more compliments to the list if you'd like.
+Today you're feeling extra nice so you're going to use a nested for loop to generate every compliment you can think of
+for every one of your friends. Go ahead and add some more compliments to the list if you'd like.
 
 ```
 print("\nSend all the compliments to all your friends\n")
@@ -51,8 +51,10 @@ for friend in followers:
 
 Whoa, what the heck is that `enumerate` thing? It's a special Python function that gives you the current for loop item's
 list index as well as the item itself. The enumerate function returns two values (`list_index`, `item`) for you to use
-inside your loop block. In the example, we have named these values `num` and `compliment`. In the `print` statement, 
-we change the item's list index from an integer to a string and add 1 because loop indexes begin 
+inside your loop block. 
+
+In the example, we have named these values `num` and `compliment`. In the `print` statement, 
+we change the item's list index `num` from an integer to a string and add 1 to it because loop list indexes begin 
 with 0, but your friends would think it was weird if you started counting with 0 and that might blow our cover.
 
 Your automated complimenting has been going great. All of your followers feel very appreciated. But today you want
