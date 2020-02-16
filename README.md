@@ -3,7 +3,7 @@
 **Exercise Description:** You have way too many followers on social media and it's just too much to keep up with.
 Generate random compliments for friends using for-each loops with this handy Python program.
 
-The code for lesson is in `forloop_lesson.py`. To view the outputs for the code below, run the program from the 
+The code for this lesson is in `forloop_lesson.py`. To view the outputs for the code below, run the program from the 
 command line with `python forloop_lesson.py`.
 
 To get started we'll need a list of your followers and a list of compliments to send them.
@@ -89,7 +89,7 @@ for friend in followers:
 ```
 
 Today you only want to send a compliment to one random friend. Use a break statement to stop your for loop after
-sending your message to just that friend
+sending your message to just that friend.
 
 ```
 random_friend = random.choice(followers)
