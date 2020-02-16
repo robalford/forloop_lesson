@@ -28,7 +28,8 @@ for compliment in compliments:
     print("Hey " + followers[1] + "! It's been too long. Just wanted to tell you that " + compliment)
 ```
 
-Cool, now let's generate random compliments for every single one of your friends.
+Cool, now let's generate random compliments for every single one of your friends (remember to import the random module
+from the Python Standard Library at the top of your file).
 
 ```
 print("\nSend random compliments to all your friends\n")
@@ -49,12 +50,12 @@ for friend in followers:
         print(str(num + 1) + "): " + compliment)
 ```
 
-Whoa, what the heck is that `enumerate` thing? It's a special Python function that gives you the current for loop item's
-list index as well as the item itself. The enumerate function returns two values (`list_index`, `item`) for you to use
-inside your loop block. 
+Whoa, what the heck is that `enumerate` thing? It's a special built-in Python function that gives you the current for 
+loop item's list index as well as the item itself. The enumerate function returns two values (`list_index`, `item`) 
+for each item that you can use inside your loop block. 
 
 In the example, we have named these values `num` and `compliment`. In the `print` statement, 
-we change the item's list index `num` from an integer to a string and add 1 to it because loop list indexes begin 
+we change the item's list index `num` from an integer to a string and add 1 to it because list indexes begin 
 with 0, but your friends would think it was weird if you started counting with 0 and that might blow our cover.
 
 Your automated complimenting has been going great. All of your followers feel very appreciated. But today you want
