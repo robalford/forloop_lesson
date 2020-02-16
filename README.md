@@ -18,6 +18,8 @@ compliments = [
 ]
 ```
 
+### For-each loops
+
 Let's start by using a for-each loop to generate a different compliment to send your best friend Randy every day. A 
 for-each loop in Python allows us to repeat the same block of code for each item in a list.
 
@@ -38,6 +40,8 @@ for friend in followers:
     print("Hey " + friend + "! How's it going? Just reaching out to say that " + random.choice(compliments))
 ```
 
+### Nested for-each loops
+
 Today you're feeling extra nice so you're going to use a nested for loop to generate every compliment you can think of
 for every one of your friends. Go ahead and add some more compliments to the list if you'd like.
 
@@ -54,9 +58,11 @@ Whoa, what the heck is that `enumerate` thing? It's a special built-in Python fu
 loop item's list index as well as the item itself. The enumerate function returns two values (`list_index`, `item`) 
 for each item that you can use inside your loop block. 
 
-In the example, we have named these values `num` and `compliment`. In the `print` statement, 
+In the example, we have named these values `num` and `compliment`. In the nested for loop, 
 we change the item's list index `num` from an integer to a string and add 1 to it because list indexes begin 
 with 0, but your friends would think it was weird if you started counting with 0 and that might blow our cover.
+
+### For-each loops and conditionals 
 
 Your automated complimenting has been going great. All of your followers feel very appreciated. But today you want
 to send an extra special compliment only to your friends that you are following, and just a normal compliment to your
@@ -75,6 +81,8 @@ for friend in followers:
     else:
         print("Hey " + friend + "! " + normal_compliment)
 ```
+
+### For-each loop control flow with `continue` and `break`
 
 You and Jo Jo are in a fight so today you're sending a random compliment to every one of your followers except her. To
 do this you can use a `continue` statement which tells the for loop to skip the rest of the loop block and move to the
